@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Bai Jamjuree", sans-serif;
+}
+ 
+header {
+   /* display: grid;
+    justify-items: center;
+     height: 70vh;*/
+    width: 100%; 
+      
+     background-image: url(images/bg-header-mobile.png);
+     background-size: cover;
+}
+
+header figure{
+    display: grid;
+    justify-items: center;
+      width: 100%;    
+ height: 50vh;
+ 
+}
+
+img {
+   /*  margin: 10% auto;
+   display: block;*/
+}
+
+.logoImg {
+  align-self: end;
+  transform: scale(0.7);
+}
+
+h1, p {
+    text-align: center;
+    opacity: 0.4;
+    font-weight: 600;
+    margin-bottom: 10%;
+    margin: 0 5% 10%;
+}
+ h1 {
+   
+ }
+input[type="button"] {
+  width: 50vh;
+  height: 8vh;
+  display: block;
+  margin: 5% auto;
+  border-radius: 30px;
+  color: white;
+}
+
+input.iOS {
+  background-color:hsl(171, 66%, 44%); 
+}
+
+input.Mac {
+  background-color:hsl(233, 100%, 69%)
+}
+@media only screen and (max-width: 655px){
+
+}
