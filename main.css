@@ -26,9 +26,10 @@ header figure{
  
 }
 
-img {
-   /*  margin: 10% auto;
-   display: block;*/
+main img {
+  width: 80%;
+  margin: auto;
+  display: block;
 }
 
 .logoImg {
@@ -36,14 +37,15 @@ img {
   transform: scale(0.7);
 }
 
-h1, p {
+h1, h2, p {
     text-align: center;
     opacity: 0.4;
     font-weight: 600;
     margin-bottom: 10%;
     margin: 0 5% 10%;
 }
- h1 {
+ main h2 {
+   margin-top: 10%;
    
  }
 input[type="button"] {
@@ -62,6 +64,18 @@ input.iOS {
 input.Mac {
   background-color:hsl(233, 100%, 69%)
 }
+
+svg {
+  margin: auto;
+  display: block;
+  /* text-align: center; */
+}
+
+section img {
+  width: 30%;
+  margin-bottom: 10%;
+}
+
 @media only screen and (max-width: 655px){
 
 }
