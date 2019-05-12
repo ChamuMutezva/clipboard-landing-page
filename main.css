@@ -5,12 +5,15 @@
 }
 
 body {
+  /*width: 100%;
+  overflow-x: hidden;*/
   font-family: "Bai Jamjuree", sans-serif;
 }
 
 #page_wrapper {
   width: 100%;
   position: relative;
+  
 }
 
 header {
@@ -26,11 +29,16 @@ header figure {
   display: grid;
   justify-items: center;
   width: 100%;
-  height: 50vh;
+  height: 35vh;
 
 }
 
-main img,
+main img {
+   width: 50%;
+   margin: 5% auto;
+   display: block;
+}
+
 footer img {
   width: 80%;
   margin: auto;
@@ -42,21 +50,25 @@ footer .logoImg {
 }
 
 .logoImg {
-  align-self: end;
+  align-self: center;
   transform: scale(1.2);
 }
 
 header .logoImg {
-  margin-bottom: 10%;
+  /*margin-bottom: 10%;*/
 }
 
 h1,
 h2 {
   text-align: center;
-  opacity: 0.4;
+ /* opacity: 0.4;*/
   font-weight: 600;
   margin-bottom: 10%;
-  margin: 0 5% 10%;
+  margin: 0 5% 2%;
+}
+
+.previews p {
+  width: 90%;
 }
 
 p {
@@ -72,7 +84,7 @@ h1 {
 }
 
 main h2 {
-  margin-top: 10%;
+  margin-top: 5%;
 
 }
 
@@ -85,7 +97,7 @@ input[type="button"] {
   width: 40%;
   height: 6vh;
   /*display: block;*/
-  margin: 5%;
+  margin: 5% 1%;
   border-radius: 30px;
   color: white;
 }
@@ -100,6 +112,11 @@ input.Mac {
   background-color: hsl(233, 100%, 69%)
 }
 
+.search p {
+  margin: 0 5%;
+  text-align: start;
+}
+
 svg {
   margin: auto;
   display: block;
@@ -107,20 +124,20 @@ svg {
 }
 
 section img {
-  width: 30%;
+  width: 50%;
   margin-bottom: 10%;
 }
 
 footer {
   background-color: hsl(201, 18%, 93%);
-  /*height: 100%;*/
+  /*height: 20vh;*/  
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   margin-bottom: 5%;
 }
 
 .aboutUs {
-  margin-top: 20%;
+  margin-top: 15%;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -140,6 +157,7 @@ a.moreInfo {
   color: black;
   font-weight: 600;
   opacity: 0.5;
+  text-align: start;
   /* margin-bottom: 10%;*/
 }
 
@@ -148,6 +166,7 @@ main {
 }
 
 .fa {
+  transform: scale(1.2);
   color: hsl(210, 10%, 33%);
   text-decoration: none;
 }
@@ -177,7 +196,14 @@ section.graphics {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin-top: 5%;
 }
+/*
+a#privacy {
+  grid-area: 1/2;
+}
 
+a#install {
+  grid-area: 1/3;
+}*/
 @media only screen and (max-width: 655px) {
   header {
     background-image: url(images/bg-header-mobile.png);
@@ -229,7 +255,21 @@ section.graphics {
   main {
     margin-bottom: 30%;
   }
-
+h1 {
+  /* opacity: 0.9; */
+  font-size: x-large;
+}
   input[type="button"] {}
+
+  a#contact {
+    grid-area: 2;
+  }
+
+  a#install {
+    grid-area: 5;
+  }
+  a.moreInfo{
+    text-align: center;
+  }
 
 }
