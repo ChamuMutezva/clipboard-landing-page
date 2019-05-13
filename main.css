@@ -8,13 +8,13 @@ body {
   width: 100%;
   overflow-x: hidden;
   font-family: "Bai Jamjuree", sans-serif;
-   
+
 }
 
 #page_wrapper {
   width: 100%;
   position: relative;
- 
+
 }
 
 header {
@@ -35,9 +35,9 @@ header figure {
 }
 
 main img {
-   width: 50%;
-   margin: 5% auto;
-   display: block;
+  width: 50%;
+  margin: 5% auto;
+  display: block;
 }
 
 footer img {
@@ -60,9 +60,10 @@ header .logoImg {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   text-align: center;
- /* opacity: 0.4;*/
+  /* opacity: 0.4;*/
   font-weight: 600;
   margin-bottom: 10%;
   margin: 0 5% 2%;
@@ -74,7 +75,7 @@ h2 {
 
 p {
   text-align: center;
-  opacity: 0.4;
+  opacity: 0.3;
   font-weight: 600;
   font-size: large;
   margin: 0 25%;
@@ -84,7 +85,8 @@ h1 {
   opacity: 0.9;
 }
 
-main h2 {
+main h2,
+main h3 {
   margin-top: 5%;
 
 }
@@ -96,7 +98,7 @@ main h2 {
 
 input[type="button"] {
   width: 35%;
-  height: 7vh;
+  height: 6vh;
   /*display: block;*/
   margin: 5% 1%;
   border-radius: 30px;
@@ -130,8 +132,8 @@ section img {
 }
 
 footer {
-  background-color: hsl(201, 18%, 93%);
-  /*height: 20vh;*/  
+  background-color: #f1f0ec;  
+  /*height: 20vh;*/
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   margin-bottom: 5%;
@@ -142,7 +144,7 @@ footer {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
+
 }
 
 .socialIcons {
@@ -201,10 +203,10 @@ section.graphics {
 a:hover {
   cursor: pointer;
   opacity: 0.6;
-   color: hsl(171, 66%, 44%);
+  color: hsl(171, 66%, 44%);
 }
 
-input[type="button"]:hover{
+input[type="button"]:hover {
   cursor: pointer;
   opacity: 0.6;
 }
@@ -227,25 +229,54 @@ a#install {
     grid-template-columns: 1fr;
   }
 
+  main img {
+    width: 80%;
+  }
+
+  figure {
+    margin-bottom: 10%;
+  }
+
+  h2.clipboard {
+    margin: 5% 10%;
+  }
+
+.search p {
+  margin: 0 10%;
+  text-align: center;
+}
+.search {
+  margin-bottom: 30%;
+}
+
   .aboutUs {
     margin-top: -20%;
-        text-align: center;    
+    text-align: center;
     grid-template-columns: 1fr;
     grid-row-gap: 20%;
   }
 
   .logoImg {
+    align-self: end;
     transform: scale(0.7);
+  }
+
+  header .logoImg {
+    margin-top: 10%;
   }
 
   p {
     font-weight: 600;
-    margin: 0 5% 10%;
-    font-size: medium;
+    margin: 0 12% 10%;
+    font-size: small;
   }
 
   .btnSection {
     grid-template-columns: 1fr;
+  }
+
+  .graphics img {
+    width: 40%;
   }
 
   input.Mac,
@@ -259,21 +290,28 @@ a#install {
   }
 
   .previews {
+    margin-bottom: 20%;
     grid-template-columns: 1fr;
   }
 
-  section.graphics {   
-    grid-template-columns: 1fr;  
+  section.graphics {
+    grid-template-columns: 1fr;
   }
 
   main {
+    margin-top: 30%;
     margin-bottom: 30%;
   }
-h1 {
-  /* opacity: 0.9; */
-  font-size: x-large;
-}
-  input[type="button"] {}
+
+  h1 {
+    /* opacity: 0.9; */
+    font-size: x-large;
+    margin: 3% 15%;
+  }
+
+  input[type="button"] {
+    height: 9vh;
+  }
 
   a#contact {
     grid-area: 2;
@@ -282,7 +320,8 @@ h1 {
   a#install {
     grid-area: 5;
   }
-  a.moreInfo{
+
+  a.moreInfo {
     text-align: center;
   }
 
