@@ -136,7 +136,7 @@ footer {
   /*height: 20vh;*/
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  margin-bottom: 5%;
+ /* margin-bottom: 5%;*/
 }
 
 .aboutUs {
