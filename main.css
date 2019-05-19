@@ -11,7 +11,7 @@ body {
 
 }
 
-#page_wrapper {
+.page_wrapper {
   width: 100%;
   position: relative;
 
@@ -313,11 +313,11 @@ a#install {
     height: 9vh;
   }
 
-  a#contact {
+  a.contact {
     grid-area: 2;
   }
 
-  a#install {
+  a.install {
     grid-area: 5;
   }
 
